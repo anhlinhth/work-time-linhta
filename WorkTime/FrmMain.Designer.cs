@@ -1950,7 +1950,7 @@
             this.tabC_Personnal_relation.Location = new System.Drawing.Point(5, 6);
             this.tabC_Personnal_relation.Name = "tabC_Personnal_relation";
             this.tabC_Personnal_relation.SelectedIndex = 0;
-            this.tabC_Personnal_relation.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Personnal_relation.Size = new System.Drawing.Size(817, 614);
             this.tabC_Personnal_relation.TabIndex = 1;
             // 
             // tabPage7
@@ -1958,7 +1958,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage7.Size = new System.Drawing.Size(809, 586);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1993,7 +1993,7 @@
             this.tabC_Money.Location = new System.Drawing.Point(5, 6);
             this.tabC_Money.Name = "tabC_Money";
             this.tabC_Money.SelectedIndex = 0;
-            this.tabC_Money.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Money.Size = new System.Drawing.Size(817, 614);
             this.tabC_Money.TabIndex = 1;
             // 
             // tabPage9
@@ -2001,7 +2001,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage9.Size = new System.Drawing.Size(809, 586);
             this.tabPage9.TabIndex = 0;
             this.tabPage9.Text = "tabPage9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -2036,7 +2036,7 @@
             this.tabC_Cards.Location = new System.Drawing.Point(5, 6);
             this.tabC_Cards.Name = "tabC_Cards";
             this.tabC_Cards.SelectedIndex = 0;
-            this.tabC_Cards.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Cards.Size = new System.Drawing.Size(817, 614);
             this.tabC_Cards.TabIndex = 1;
             // 
             // tabPage11
@@ -2044,7 +2044,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 24);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage11.Size = new System.Drawing.Size(809, 586);
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "tabPage11";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -2079,7 +2079,7 @@
             this.tabC_Keys.Location = new System.Drawing.Point(5, 6);
             this.tabC_Keys.Name = "tabC_Keys";
             this.tabC_Keys.SelectedIndex = 0;
-            this.tabC_Keys.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Keys.Size = new System.Drawing.Size(817, 614);
             this.tabC_Keys.TabIndex = 1;
             // 
             // tabPage13
@@ -2087,7 +2087,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 24);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage13.Size = new System.Drawing.Size(809, 586);
             this.tabPage13.TabIndex = 0;
             this.tabPage13.Text = "tabPage13";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -2122,7 +2122,7 @@
             this.tabC_Work.Location = new System.Drawing.Point(5, 6);
             this.tabC_Work.Name = "tabC_Work";
             this.tabC_Work.SelectedIndex = 0;
-            this.tabC_Work.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Work.Size = new System.Drawing.Size(817, 614);
             this.tabC_Work.TabIndex = 1;
             // 
             // tabPage15
@@ -2130,7 +2130,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 24);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage15.Size = new System.Drawing.Size(809, 586);
             this.tabPage15.TabIndex = 0;
             this.tabPage15.Text = "tabPage15";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -2165,7 +2165,7 @@
             this.tabC_Works_day.Location = new System.Drawing.Point(5, 6);
             this.tabC_Works_day.Name = "tabC_Works_day";
             this.tabC_Works_day.SelectedIndex = 0;
-            this.tabC_Works_day.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Works_day.Size = new System.Drawing.Size(817, 614);
             this.tabC_Works_day.TabIndex = 1;
             // 
             // tabPage17
@@ -2173,7 +2173,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 24);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage17.Size = new System.Drawing.Size(809, 586);
             this.tabPage17.TabIndex = 0;
             this.tabPage17.Text = "tabPage17";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -2208,7 +2208,7 @@
             this.tabC_Works_date.Location = new System.Drawing.Point(5, 6);
             this.tabC_Works_date.Name = "tabC_Works_date";
             this.tabC_Works_date.SelectedIndex = 0;
-            this.tabC_Works_date.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Works_date.Size = new System.Drawing.Size(817, 614);
             this.tabC_Works_date.TabIndex = 1;
             // 
             // tabPage19
@@ -2216,7 +2216,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 24);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage19.Size = new System.Drawing.Size(809, 586);
             this.tabPage19.TabIndex = 0;
             this.tabPage19.Text = "tabPage19";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -2501,7 +2501,7 @@
             this.panel_btnMenu.Controls.Add(this.btnWorks);
             this.panel_btnMenu.Controls.Add(this.panel3);
             this.panel_btnMenu.Controls.Add(this.panel2);
-            this.panel_btnMenu.Location = new System.Drawing.Point(0, 65);
+            this.panel_btnMenu.Location = new System.Drawing.Point(-21, 65);
             this.panel_btnMenu.Name = "panel_btnMenu";
             this.panel_btnMenu.Size = new System.Drawing.Size(132, 610);
             this.panel_btnMenu.TabIndex = 0;
