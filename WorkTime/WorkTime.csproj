@@ -185,6 +185,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Everaldo-Crystal-Clear-App-amor-smile.ico" />
     <None Include="Resources\Everaldo-Crystal-Clear-App-xmag-search.ico" />
     <None Include="Resources\Everaldo-Crystal-Clear-Action-configure1.ico" />
     <None Include="Resources\Everaldo-Crystal-Clear-Action-remove.ico" />

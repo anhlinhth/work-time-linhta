@@ -45,6 +45,7 @@ namespace WorkTime
             leftMenu.Add(btnKeys);
             leftMenu.Add(btnMoney);
             leftMenu.Add(btnWorks);
+            leftMenu.Add(btnHappy);
 
 
         }
@@ -86,6 +87,7 @@ namespace WorkTime
                 btnWorks.Location = new Point(btnWorks.Location.X, btnWorks.Location.Y + panel1.Height);
                 btnAppointments.Location = new Point(btnAppointments.Location.X, btnAppointments.Location.Y + panel1.Height);
                 btnNotes.Location = new Point(btnNotes.Location.X, btnNotes.Location.Y + panel1.Height);
+                btnHappy.Location = new Point(btnHappy.Location.X, btnHappy.Location.Y + panel1.Height);
             }
         }
 
@@ -102,6 +104,7 @@ namespace WorkTime
                 btnWorks.Location = new Point(btnWorks.Location.X, btnWorks.Location.Y - panel1.Height);
                 btnAppointments.Location = new Point(btnAppointments.Location.X, btnAppointments.Location.Y - panel1.Height);
                 btnNotes.Location = new Point(btnNotes.Location.X, btnNotes.Location.Y - panel1.Height);
+                btnHappy.Location = new Point(btnHappy.Location.X, btnHappy.Location.Y - panel1.Height);
             }
         }
 
@@ -116,6 +119,7 @@ namespace WorkTime
 
                 btnAppointments.Location = new Point(btnAppointments.Location.X, btnAppointments.Location.Y + panel3.Height);
                 btnNotes.Location = new Point(btnNotes.Location.X, btnNotes.Location.Y + panel3.Height);
+                btnHappy.Location = new Point(btnHappy.Location.X, btnHappy.Location.Y + panel1.Height);
             }
         }
 
@@ -128,6 +132,7 @@ namespace WorkTime
 
                 btnAppointments.Location = new Point(btnAppointments.Location.X, btnAppointments.Location.Y - panel3.Height);
                 btnNotes.Location = new Point(btnNotes.Location.X, btnNotes.Location.Y - panel3.Height);
+                btnHappy.Location = new Point(btnHappy.Location.X, btnHappy.Location.Y - panel1.Height);
             }
         }
 
@@ -141,6 +146,7 @@ namespace WorkTime
                 panel2.Location = new Point(btnAppointments.Location.X, btnAppointments.Location.Y + btnAppointments.Height);
 
                 btnNotes.Location = new Point(btnNotes.Location.X, btnNotes.Location.Y + panel2.Height);
+                btnHappy.Location = new Point(btnHappy.Location.X, btnHappy.Location.Y + panel1.Height);
             }
         }
 
@@ -152,6 +158,7 @@ namespace WorkTime
                 show_panel_Notes = false;
 
                 btnNotes.Location = new Point(btnNotes.Location.X, btnNotes.Location.Y - panel2.Height);
+                btnHappy.Location = new Point(btnHappy.Location.X, btnHappy.Location.Y - panel1.Height);
             }
         }
 
@@ -219,6 +226,17 @@ namespace WorkTime
             btnLeftMenu_click(sender);
 
             tabC.SelectedTab = tabAppointments;
+        }
+
+        private void btnHappy_Click(object sender, EventArgs e)
+        {
+            hidePanel_work();
+            hidePanel_personnal();
+            hidePanel_notes();
+
+            btnLeftMenu_click(sender);
+
+            tabC.SelectedTab = tabHappy;
         }
 
         private void btn_showBtnMenu_Click(object sender, EventArgs e)
@@ -302,7 +320,7 @@ namespace WorkTime
         {
             btnLeftMenu_child2_click(sender);
 
-            tabC.SelectedTab = tabPersonnal_old;
+            tabC.SelectedTab = tabHappy;
         }
 
         private void btnPersonnal_relation_Click(object sender, EventArgs e)
@@ -698,6 +716,8 @@ namespace WorkTime
                 dtpPersonnel_search_out_end.Enabled = true;
             }
         }
+
+       
 
     }
 }

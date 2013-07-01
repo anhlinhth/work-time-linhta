@@ -233,6 +233,16 @@ namespace WorkTime.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Everaldo_Crystal_Clear_App_amor_smile {
+            get {
+                object obj = ResourceManager.GetObject("Everaldo-Crystal-Clear-App-amor-smile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Everaldo_Crystal_Clear_App_kdm_config {
             get {
                 object obj = ResourceManager.GetObject("Everaldo-Crystal-Clear-App-kdm-config", resourceCulture);
