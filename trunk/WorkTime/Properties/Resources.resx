@@ -118,20 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Double-J-Design-Origami-Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Double-J-Design-Origami-Calendar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Everaldo-Crystal-Clear-Action-configure" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-Action-configure.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Everaldo-Crystal-Clear-App-kdm-config" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-App-kdm-config.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Trysoda-Soda-Red-Address-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Trysoda-Soda-Red-Address-book.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Everaldo-Crystal-Clear-App-xf-mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-App-xf-mail.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Everaldo-Crystal-Clear-Action-exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-Action-exit.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Delacro-Once-Again-Cash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delacro-Once-Again-Cash.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Double-J-Design-Origami-Colored-Pencil-Blue-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Double-J-Design-Origami-Colored-Pencil-Blue-user.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Everaldo-Crystal-Clear-Action-configure" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-Action-configure.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Delacro-Once-Again-Calender" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delacro-Once-Again-Calender.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Custom-Icon-Design-Office-Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Custom-Icon-Design-Office-Calendar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,64 +142,64 @@
   <data name="Aha-Soft-Large-Calendar-Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aha-Soft-Large-Calendar-Calendar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Everaldo-Crystal-Clear-Action-exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-Action-exit.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Everaldo-Crystal-Clear-Action-edit-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-Action-edit-add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Wwalczyszyn-Android-Style-Notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wwalczyszyn-Android-Style-Notes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Guillendesign-Variations-2-Address-Book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guillendesign-Variations-2-Address-Book.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Delacro-Once-Again-Calender" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delacro-Once-Again-Calender.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Guillendesign-Variations-2-Messenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guillendesign-Variations-2-Messenger.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Oxygen-Icons.org-Oxygen-Actions-view-pim-notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Oxygen-Icons.org-Oxygen-Actions-view-pim-notes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Everaldo-Crystal-Clear-App-xmag-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-App-xmag-search.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Deleket-Sleek-Xp-Basic-Notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Deleket-Sleek-Xp-Basic-Notes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Wwalczyszyn-Iwindows-Sticky-Notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wwalczyszyn-Iwindows-Sticky-Notes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Custom-Icon-Design-Office-Addressbook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Custom-Icon-Design-Office-Addressbook.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Everaldo-Crystal-Clear-Action-remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-Action-remove.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Everaldo-Crystal-Clear-Action-ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-Action-ok.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Double-J-Design-Origami-Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Double-J-Design-Origami-Calendar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Trysoda-Soda-Red-Keys" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Trysoda-Soda-Red-Keys.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Double-J-Design-Origami-Colored-Pencil-Blue-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Double-J-Design-Origami-Colored-Pencil-Blue-user.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Everaldo-Crystal-Clear-Action-configure1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Everaldo-Crystal-Clear-Action-configure1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Everaldo-Crystal-Clear-Action-edit-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-Action-edit-add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Delacro-Once-Again-Cash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delacro-Once-Again-Cash.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Everaldo-Crystal-Clear-App-kdm-config" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-App-kdm-config.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Everaldo-Crystal-Clear-App-xf-mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-App-xf-mail.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Everaldo-Crystal-Clear-Action-remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-Action-remove.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Double-J-Design-Origami-Address-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Double-J-Design-Origami-Address-book.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Guillendesign-Variations-2-Messenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guillendesign-Variations-2-Messenger.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wwalczyszyn-Android-Style-Notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wwalczyszyn-Android-Style-Notes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Double-J-Design-Ravenna-3d-Address-Book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Double-J-Design-Ravenna-3d-Address-Book.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Everaldo-Crystal-Clear-App-xmag-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Everaldo-Crystal-Clear-App-xmag-search.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Everaldo-Crystal-Clear-Action-ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-Action-ok.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oxygen-Icons.org-Oxygen-Actions-view-pim-notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oxygen-Icons.org-Oxygen-Actions-view-pim-notes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Custom-Icon-Design-Office-Addressbook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom-Icon-Design-Office-Addressbook.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wwalczyszyn-Iwindows-Sticky-Notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wwalczyszyn-Iwindows-Sticky-Notes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guillendesign-Variations-2-Address-Book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guillendesign-Variations-2-Address-Book.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Everaldo-Crystal-Clear-App-amor-smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Everaldo-Crystal-Clear-App-amor-smile.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

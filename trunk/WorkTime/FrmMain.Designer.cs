@@ -51,9 +51,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rbtPersonel_all_searchMSNV = new System.Windows.Forms.RadioButton();
             this.rbtPersonel_all_searchName = new System.Windows.Forms.RadioButton();
-            this.btnPersonnel_all_Edit = new System.Windows.Forms.Button();
-            this.btnPersonnel_all_Delete = new System.Windows.Forms.Button();
-            this.btnPersonnel_all_Add = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbPersonnel_all_project = new System.Windows.Forms.CheckBox();
             this.cbPersonnel_all_in = new System.Windows.Forms.CheckBox();
@@ -106,9 +103,6 @@
             this.dgvPersonnel_detail = new System.Windows.Forms.DataGridView();
             this.txtPersonnel_detail__MSNV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnPersonnel_detail_update = new System.Windows.Forms.Button();
-            this.btnPersonnel_detail_edit = new System.Windows.Forms.Button();
-            this.picPersonnel_detail_avata = new System.Windows.Forms.PictureBox();
             this.cbPersonnel_search_zingid = new System.Windows.Forms.TabPage();
             this.cbPersonnel_search_out = new System.Windows.Forms.CheckBox();
             this.cbPersonnel_search_in = new System.Windows.Forms.CheckBox();
@@ -145,12 +139,11 @@
             this.txtPersonnel_search_name = new System.Windows.Forms.TextBox();
             this.txtPersonnel_search_MSNV = new System.Windows.Forms.TextBox();
             this.dgvPersonnel_search = new System.Windows.Forms.DataGridView();
-            this.btnPersonnel_search_search = new System.Windows.Forms.Button();
             this.tabPersonnal_now = new System.Windows.Forms.TabPage();
             this.tabC_Personnal_now = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPersonnal_old = new System.Windows.Forms.TabPage();
+            this.tabHappy = new System.Windows.Forms.TabPage();
             this.tabC_Personnal_old = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -207,6 +200,12 @@
             this.tabPage31 = new System.Windows.Forms.TabPage();
             this.tabPage32 = new System.Windows.Forms.TabPage();
             this.panel_btnMenu = new System.Windows.Forms.Panel();
+            this.btn_showBtnMenu = new System.Windows.Forms.Button();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.notify_Main = new System.Windows.Forms.NotifyIcon(this.components);
+            this.notify_Main_menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.openFileDialog_IMG = new System.Windows.Forms.OpenFileDialog();
+            this.btnHappy = new System.Windows.Forms.Button();
             this.btnAppointments = new System.Windows.Forms.Button();
             this.btnCards = new System.Windows.Forms.Button();
             this.btnKeys = new System.Windows.Forms.Button();
@@ -226,12 +225,14 @@
             this.btnAppointments_date = new System.Windows.Forms.Button();
             this.btnAppointments_day = new System.Windows.Forms.Button();
             this.btnAppointments_ly = new System.Windows.Forms.Button();
-            this.btn_showBtnMenu = new System.Windows.Forms.Button();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.notify_Main = new System.Windows.Forms.NotifyIcon(this.components);
-            this.notify_Main_menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnPersonnel_all_Edit = new System.Windows.Forms.Button();
+            this.btnPersonnel_all_Delete = new System.Windows.Forms.Button();
+            this.btnPersonnel_all_Add = new System.Windows.Forms.Button();
+            this.btnPersonnel_detail_update = new System.Windows.Forms.Button();
+            this.btnPersonnel_detail_edit = new System.Windows.Forms.Button();
+            this.picPersonnel_detail_avata = new System.Windows.Forms.PictureBox();
+            this.btnPersonnel_search_search = new System.Windows.Forms.Button();
             this.notify_Main_menu_quit = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog_IMG = new System.Windows.Forms.OpenFileDialog();
             this.tabC.SuspendLayout();
             this.tabPersonnal.SuspendLayout();
             this.tabC_Personnal.SuspendLayout();
@@ -242,14 +243,13 @@
             this.tabPersonnel_detail.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel_detail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).BeginInit();
             this.cbPersonnel_search_zingid.SuspendLayout();
             this.grbPersonnel_search_out.SuspendLayout();
             this.grbPersonnel_search_in.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel_search)).BeginInit();
             this.tabPersonnal_now.SuspendLayout();
             this.tabC_Personnal_now.SuspendLayout();
-            this.tabPersonnal_old.SuspendLayout();
+            this.tabHappy.SuspendLayout();
             this.tabC_Personnal_old.SuspendLayout();
             this.tabPersonnal_relation.SuspendLayout();
             this.tabC_Personnal_relation.SuspendLayout();
@@ -278,10 +278,11 @@
             this.tabAppointments_ly.SuspendLayout();
             this.tabC_Appointments_ly.SuspendLayout();
             this.panel_btnMenu.SuspendLayout();
+            this.notify_Main_menu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.notify_Main_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).BeginInit();
             this.SuspendLayout();
             // 
             // tabC
@@ -293,7 +294,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.tabC.Controls.Add(this.tabPersonnal);
             this.tabC.Controls.Add(this.tabPersonnal_now);
-            this.tabC.Controls.Add(this.tabPersonnal_old);
+            this.tabC.Controls.Add(this.tabHappy);
             this.tabC.Controls.Add(this.tabPersonnal_relation);
             this.tabC.Controls.Add(this.tabMoney);
             this.tabC.Controls.Add(this.tabCards);
@@ -603,53 +604,6 @@
             this.rbtPersonel_all_searchName.TabIndex = 4;
             this.rbtPersonel_all_searchName.Text = "Tên";
             this.rbtPersonel_all_searchName.UseVisualStyleBackColor = true;
-            // 
-            // btnPersonnel_all_Edit
-            // 
-            this.btnPersonnel_all_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_all_Edit.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPersonnel_all_Edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_all_Edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure1;
-            this.btnPersonnel_all_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_all_Edit.Location = new System.Drawing.Point(648, 542);
-            this.btnPersonnel_all_Edit.Name = "btnPersonnel_all_Edit";
-            this.btnPersonnel_all_Edit.Size = new System.Drawing.Size(79, 41);
-            this.btnPersonnel_all_Edit.TabIndex = 20;
-            this.btnPersonnel_all_Edit.Text = "Sửa";
-            this.btnPersonnel_all_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_all_Edit.UseVisualStyleBackColor = false;
-            this.btnPersonnel_all_Edit.Click += new System.EventHandler(this.btnPersonnel_all_Edit_Click);
-            // 
-            // btnPersonnel_all_Delete
-            // 
-            this.btnPersonnel_all_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_all_Delete.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPersonnel_all_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_all_Delete.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_remove;
-            this.btnPersonnel_all_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_all_Delete.Location = new System.Drawing.Point(730, 542);
-            this.btnPersonnel_all_Delete.Name = "btnPersonnel_all_Delete";
-            this.btnPersonnel_all_Delete.Size = new System.Drawing.Size(79, 41);
-            this.btnPersonnel_all_Delete.TabIndex = 19;
-            this.btnPersonnel_all_Delete.Text = "Xóa";
-            this.btnPersonnel_all_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_all_Delete.UseVisualStyleBackColor = false;
-            // 
-            // btnPersonnel_all_Add
-            // 
-            this.btnPersonnel_all_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_all_Add.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPersonnel_all_Add.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_all_Add.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_edit_add;
-            this.btnPersonnel_all_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_all_Add.Location = new System.Drawing.Point(557, 542);
-            this.btnPersonnel_all_Add.Name = "btnPersonnel_all_Add";
-            this.btnPersonnel_all_Add.Size = new System.Drawing.Size(87, 41);
-            this.btnPersonnel_all_Add.TabIndex = 18;
-            this.btnPersonnel_all_Add.Text = "Thêm";
-            this.btnPersonnel_all_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_all_Add.UseVisualStyleBackColor = false;
-            this.btnPersonnel_all_Add.Click += new System.EventHandler(this.btnPersonnel_all_Add_Click);
             // 
             // label2
             // 
@@ -1335,47 +1289,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "MSNV :";
             // 
-            // btnPersonnel_detail_update
-            // 
-            this.btnPersonnel_detail_update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_detail_update.Enabled = false;
-            this.btnPersonnel_detail_update.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_detail_update.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_ok;
-            this.btnPersonnel_detail_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_detail_update.Location = new System.Drawing.Point(681, 447);
-            this.btnPersonnel_detail_update.Name = "btnPersonnel_detail_update";
-            this.btnPersonnel_detail_update.Size = new System.Drawing.Size(112, 44);
-            this.btnPersonnel_detail_update.TabIndex = 35;
-            this.btnPersonnel_detail_update.Text = "Cập nhật";
-            this.btnPersonnel_detail_update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_detail_update.UseVisualStyleBackColor = true;
-            this.btnPersonnel_detail_update.Click += new System.EventHandler(this.btnPersonnel_detail_update_Click);
-            // 
-            // btnPersonnel_detail_edit
-            // 
-            this.btnPersonnel_detail_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_detail_edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_detail_edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure;
-            this.btnPersonnel_detail_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_detail_edit.Location = new System.Drawing.Point(681, 371);
-            this.btnPersonnel_detail_edit.Name = "btnPersonnel_detail_edit";
-            this.btnPersonnel_detail_edit.Size = new System.Drawing.Size(112, 44);
-            this.btnPersonnel_detail_edit.TabIndex = 34;
-            this.btnPersonnel_detail_edit.Text = "Thay đổi";
-            this.btnPersonnel_detail_edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_detail_edit.UseVisualStyleBackColor = true;
-            this.btnPersonnel_detail_edit.Click += new System.EventHandler(this.btnPersonnel_detail_edit_Click);
-            // 
-            // picPersonnel_detail_avata
-            // 
-            this.picPersonnel_detail_avata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picPersonnel_detail_avata.BackColor = System.Drawing.Color.LightGray;
-            this.picPersonnel_detail_avata.Location = new System.Drawing.Point(663, 41);
-            this.picPersonnel_detail_avata.Name = "picPersonnel_detail_avata";
-            this.picPersonnel_detail_avata.Size = new System.Drawing.Size(118, 113);
-            this.picPersonnel_detail_avata.TabIndex = 2;
-            this.picPersonnel_detail_avata.TabStop = false;
-            // 
             // cbPersonnel_search_zingid
             // 
             this.cbPersonnel_search_zingid.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1829,20 +1742,6 @@
             this.dgvPersonnel_search.TabIndex = 31;
             this.dgvPersonnel_search.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonnel_search_CellContentClick);
             // 
-            // btnPersonnel_search_search
-            // 
-            this.btnPersonnel_search_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_search_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_search_search.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_App_xmag_search;
-            this.btnPersonnel_search_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_search_search.Location = new System.Drawing.Point(711, 186);
-            this.btnPersonnel_search_search.Name = "btnPersonnel_search_search";
-            this.btnPersonnel_search_search.Size = new System.Drawing.Size(75, 54);
-            this.btnPersonnel_search_search.TabIndex = 69;
-            this.btnPersonnel_search_search.Text = "Tìm";
-            this.btnPersonnel_search_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_search_search.UseVisualStyleBackColor = true;
-            // 
             // tabPersonnal_now
             // 
             this.tabPersonnal_now.Controls.Add(this.tabC_Personnal_now);
@@ -1864,7 +1763,7 @@
             this.tabC_Personnal_now.Location = new System.Drawing.Point(5, 6);
             this.tabC_Personnal_now.Name = "tabC_Personnal_now";
             this.tabC_Personnal_now.SelectedIndex = 0;
-            this.tabC_Personnal_now.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Personnal_now.Size = new System.Drawing.Size(1037, 588);
             this.tabC_Personnal_now.TabIndex = 1;
             // 
             // tabPage1
@@ -1872,7 +1771,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage1.Size = new System.Drawing.Size(1029, 560);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1882,20 +1781,20 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage2.Size = new System.Drawing.Size(1029, 560);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPersonnal_old
+            // tabHappy
             // 
-            this.tabPersonnal_old.Controls.Add(this.tabC_Personnal_old);
-            this.tabPersonnal_old.Location = new System.Drawing.Point(44, 4);
-            this.tabPersonnal_old.Name = "tabPersonnal_old";
-            this.tabPersonnal_old.Size = new System.Drawing.Size(818, 616);
-            this.tabPersonnal_old.TabIndex = 2;
-            this.tabPersonnal_old.Text = "per_old";
-            this.tabPersonnal_old.UseVisualStyleBackColor = true;
+            this.tabHappy.Controls.Add(this.tabC_Personnal_old);
+            this.tabHappy.Location = new System.Drawing.Point(44, 4);
+            this.tabHappy.Name = "tabHappy";
+            this.tabHappy.Size = new System.Drawing.Size(818, 616);
+            this.tabHappy.TabIndex = 2;
+            this.tabHappy.Text = "happy";
+            this.tabHappy.UseVisualStyleBackColor = true;
             // 
             // tabC_Personnal_old
             // 
@@ -1907,7 +1806,7 @@
             this.tabC_Personnal_old.Location = new System.Drawing.Point(5, 6);
             this.tabC_Personnal_old.Name = "tabC_Personnal_old";
             this.tabC_Personnal_old.SelectedIndex = 0;
-            this.tabC_Personnal_old.Size = new System.Drawing.Size(1017, 588);
+            this.tabC_Personnal_old.Size = new System.Drawing.Size(817, 614);
             this.tabC_Personnal_old.TabIndex = 1;
             // 
             // tabPage5
@@ -1915,7 +1814,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage5.Size = new System.Drawing.Size(809, 586);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1925,7 +1824,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage6.Size = new System.Drawing.Size(1029, 560);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1968,7 +1867,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage8.Size = new System.Drawing.Size(829, 586);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1993,7 +1892,7 @@
             this.tabC_Money.Location = new System.Drawing.Point(5, 6);
             this.tabC_Money.Name = "tabC_Money";
             this.tabC_Money.SelectedIndex = 0;
-            this.tabC_Money.Size = new System.Drawing.Size(817, 614);
+            this.tabC_Money.Size = new System.Drawing.Size(837, 614);
             this.tabC_Money.TabIndex = 1;
             // 
             // tabPage9
@@ -2001,7 +1900,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(809, 586);
+            this.tabPage9.Size = new System.Drawing.Size(829, 586);
             this.tabPage9.TabIndex = 0;
             this.tabPage9.Text = "tabPage9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -2011,7 +1910,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage10.Size = new System.Drawing.Size(829, 586);
             this.tabPage10.TabIndex = 1;
             this.tabPage10.Text = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -2036,7 +1935,7 @@
             this.tabC_Cards.Location = new System.Drawing.Point(5, 6);
             this.tabC_Cards.Name = "tabC_Cards";
             this.tabC_Cards.SelectedIndex = 0;
-            this.tabC_Cards.Size = new System.Drawing.Size(817, 614);
+            this.tabC_Cards.Size = new System.Drawing.Size(837, 614);
             this.tabC_Cards.TabIndex = 1;
             // 
             // tabPage11
@@ -2044,7 +1943,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 24);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(809, 586);
+            this.tabPage11.Size = new System.Drawing.Size(829, 586);
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "tabPage11";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -2054,7 +1953,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 24);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage12.Size = new System.Drawing.Size(829, 586);
             this.tabPage12.TabIndex = 1;
             this.tabPage12.Text = "tabPage12";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -2079,7 +1978,7 @@
             this.tabC_Keys.Location = new System.Drawing.Point(5, 6);
             this.tabC_Keys.Name = "tabC_Keys";
             this.tabC_Keys.SelectedIndex = 0;
-            this.tabC_Keys.Size = new System.Drawing.Size(817, 614);
+            this.tabC_Keys.Size = new System.Drawing.Size(837, 614);
             this.tabC_Keys.TabIndex = 1;
             // 
             // tabPage13
@@ -2087,7 +1986,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 24);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(809, 586);
+            this.tabPage13.Size = new System.Drawing.Size(829, 586);
             this.tabPage13.TabIndex = 0;
             this.tabPage13.Text = "tabPage13";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -2097,7 +1996,7 @@
             this.tabPage14.Location = new System.Drawing.Point(4, 24);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage14.Size = new System.Drawing.Size(829, 586);
             this.tabPage14.TabIndex = 1;
             this.tabPage14.Text = "tabPage14";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -2122,7 +2021,7 @@
             this.tabC_Work.Location = new System.Drawing.Point(5, 6);
             this.tabC_Work.Name = "tabC_Work";
             this.tabC_Work.SelectedIndex = 0;
-            this.tabC_Work.Size = new System.Drawing.Size(817, 614);
+            this.tabC_Work.Size = new System.Drawing.Size(837, 614);
             this.tabC_Work.TabIndex = 1;
             // 
             // tabPage15
@@ -2130,7 +2029,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 24);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(809, 586);
+            this.tabPage15.Size = new System.Drawing.Size(829, 586);
             this.tabPage15.TabIndex = 0;
             this.tabPage15.Text = "tabPage15";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -2140,7 +2039,7 @@
             this.tabPage16.Location = new System.Drawing.Point(4, 24);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage16.Size = new System.Drawing.Size(829, 586);
             this.tabPage16.TabIndex = 1;
             this.tabPage16.Text = "tabPage16";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -2165,7 +2064,7 @@
             this.tabC_Works_day.Location = new System.Drawing.Point(5, 6);
             this.tabC_Works_day.Name = "tabC_Works_day";
             this.tabC_Works_day.SelectedIndex = 0;
-            this.tabC_Works_day.Size = new System.Drawing.Size(817, 614);
+            this.tabC_Works_day.Size = new System.Drawing.Size(837, 614);
             this.tabC_Works_day.TabIndex = 1;
             // 
             // tabPage17
@@ -2173,7 +2072,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 24);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(809, 586);
+            this.tabPage17.Size = new System.Drawing.Size(829, 586);
             this.tabPage17.TabIndex = 0;
             this.tabPage17.Text = "tabPage17";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -2183,7 +2082,7 @@
             this.tabPage18.Location = new System.Drawing.Point(4, 24);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage18.Size = new System.Drawing.Size(829, 586);
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "tabPage18";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -2208,7 +2107,7 @@
             this.tabC_Works_date.Location = new System.Drawing.Point(5, 6);
             this.tabC_Works_date.Name = "tabC_Works_date";
             this.tabC_Works_date.SelectedIndex = 0;
-            this.tabC_Works_date.Size = new System.Drawing.Size(817, 614);
+            this.tabC_Works_date.Size = new System.Drawing.Size(837, 614);
             this.tabC_Works_date.TabIndex = 1;
             // 
             // tabPage19
@@ -2216,7 +2115,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 24);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(809, 586);
+            this.tabPage19.Size = new System.Drawing.Size(829, 586);
             this.tabPage19.TabIndex = 0;
             this.tabPage19.Text = "tabPage19";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -2226,7 +2125,7 @@
             this.tabPage20.Location = new System.Drawing.Point(4, 24);
             this.tabPage20.Name = "tabPage20";
             this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(1009, 560);
+            this.tabPage20.Size = new System.Drawing.Size(829, 586);
             this.tabPage20.TabIndex = 1;
             this.tabPage20.Text = "tabPage20";
             this.tabPage20.UseVisualStyleBackColor = true;
@@ -2251,7 +2150,7 @@
             this.tabC_Works_ly.Location = new System.Drawing.Point(5, 6);
             this.tabC_Works_ly.Name = "tabC_Works_ly";
             this.tabC_Works_ly.SelectedIndex = 0;
-            this.tabC_Works_ly.Size = new System.Drawing.Size(837, 588);
+            this.tabC_Works_ly.Size = new System.Drawing.Size(817, 614);
             this.tabC_Works_ly.TabIndex = 1;
             // 
             // tabPage21
@@ -2259,7 +2158,7 @@
             this.tabPage21.Location = new System.Drawing.Point(4, 24);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage21.Size = new System.Drawing.Size(829, 560);
+            this.tabPage21.Size = new System.Drawing.Size(809, 586);
             this.tabPage21.TabIndex = 0;
             this.tabPage21.Text = "tabPage21";
             this.tabPage21.UseVisualStyleBackColor = true;
@@ -2294,7 +2193,7 @@
             this.tabC_Notes.Location = new System.Drawing.Point(5, 6);
             this.tabC_Notes.Name = "tabC_Notes";
             this.tabC_Notes.SelectedIndex = 0;
-            this.tabC_Notes.Size = new System.Drawing.Size(817, 588);
+            this.tabC_Notes.Size = new System.Drawing.Size(817, 614);
             this.tabC_Notes.TabIndex = 1;
             // 
             // tabPage23
@@ -2302,7 +2201,7 @@
             this.tabPage23.Location = new System.Drawing.Point(4, 24);
             this.tabPage23.Name = "tabPage23";
             this.tabPage23.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage23.Size = new System.Drawing.Size(809, 560);
+            this.tabPage23.Size = new System.Drawing.Size(809, 586);
             this.tabPage23.TabIndex = 0;
             this.tabPage23.Text = "tabPage23";
             this.tabPage23.UseVisualStyleBackColor = true;
@@ -2337,7 +2236,7 @@
             this.tabC_Appointments.Location = new System.Drawing.Point(5, 6);
             this.tabC_Appointments.Name = "tabC_Appointments";
             this.tabC_Appointments.SelectedIndex = 0;
-            this.tabC_Appointments.Size = new System.Drawing.Size(817, 588);
+            this.tabC_Appointments.Size = new System.Drawing.Size(817, 614);
             this.tabC_Appointments.TabIndex = 1;
             // 
             // tabPage25
@@ -2345,7 +2244,7 @@
             this.tabPage25.Location = new System.Drawing.Point(4, 24);
             this.tabPage25.Name = "tabPage25";
             this.tabPage25.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage25.Size = new System.Drawing.Size(809, 560);
+            this.tabPage25.Size = new System.Drawing.Size(809, 586);
             this.tabPage25.TabIndex = 0;
             this.tabPage25.Text = "tabPage25";
             this.tabPage25.UseVisualStyleBackColor = true;
@@ -2380,7 +2279,7 @@
             this.tabC_Appointments_day.Location = new System.Drawing.Point(5, 6);
             this.tabC_Appointments_day.Name = "tabC_Appointments_day";
             this.tabC_Appointments_day.SelectedIndex = 0;
-            this.tabC_Appointments_day.Size = new System.Drawing.Size(817, 588);
+            this.tabC_Appointments_day.Size = new System.Drawing.Size(817, 614);
             this.tabC_Appointments_day.TabIndex = 1;
             // 
             // tabPage27
@@ -2388,7 +2287,7 @@
             this.tabPage27.Location = new System.Drawing.Point(4, 24);
             this.tabPage27.Name = "tabPage27";
             this.tabPage27.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage27.Size = new System.Drawing.Size(809, 560);
+            this.tabPage27.Size = new System.Drawing.Size(809, 586);
             this.tabPage27.TabIndex = 0;
             this.tabPage27.Text = "tabPage27";
             this.tabPage27.UseVisualStyleBackColor = true;
@@ -2423,7 +2322,7 @@
             this.tabC_Appointments_date.Location = new System.Drawing.Point(5, 6);
             this.tabC_Appointments_date.Name = "tabC_Appointments_date";
             this.tabC_Appointments_date.SelectedIndex = 0;
-            this.tabC_Appointments_date.Size = new System.Drawing.Size(817, 588);
+            this.tabC_Appointments_date.Size = new System.Drawing.Size(817, 614);
             this.tabC_Appointments_date.TabIndex = 1;
             // 
             // tabPage29
@@ -2431,7 +2330,7 @@
             this.tabPage29.Location = new System.Drawing.Point(4, 24);
             this.tabPage29.Name = "tabPage29";
             this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage29.Size = new System.Drawing.Size(809, 560);
+            this.tabPage29.Size = new System.Drawing.Size(809, 586);
             this.tabPage29.TabIndex = 0;
             this.tabPage29.Text = "tabPage29";
             this.tabPage29.UseVisualStyleBackColor = true;
@@ -2466,7 +2365,7 @@
             this.tabC_Appointments_ly.Location = new System.Drawing.Point(5, 6);
             this.tabC_Appointments_ly.Name = "tabC_Appointments_ly";
             this.tabC_Appointments_ly.SelectedIndex = 0;
-            this.tabC_Appointments_ly.Size = new System.Drawing.Size(817, 588);
+            this.tabC_Appointments_ly.Size = new System.Drawing.Size(817, 614);
             this.tabC_Appointments_ly.TabIndex = 1;
             // 
             // tabPage31
@@ -2474,7 +2373,7 @@
             this.tabPage31.Location = new System.Drawing.Point(4, 24);
             this.tabPage31.Name = "tabPage31";
             this.tabPage31.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage31.Size = new System.Drawing.Size(809, 560);
+            this.tabPage31.Size = new System.Drawing.Size(809, 586);
             this.tabPage31.TabIndex = 0;
             this.tabPage31.Text = "tabPage31";
             this.tabPage31.UseVisualStyleBackColor = true;
@@ -2491,6 +2390,7 @@
             // 
             // panel_btnMenu
             // 
+            this.panel_btnMenu.Controls.Add(this.btnHappy);
             this.panel_btnMenu.Controls.Add(this.btnAppointments);
             this.panel_btnMenu.Controls.Add(this.btnCards);
             this.panel_btnMenu.Controls.Add(this.btnKeys);
@@ -2503,8 +2403,71 @@
             this.panel_btnMenu.Controls.Add(this.panel2);
             this.panel_btnMenu.Location = new System.Drawing.Point(-21, 65);
             this.panel_btnMenu.Name = "panel_btnMenu";
-            this.panel_btnMenu.Size = new System.Drawing.Size(132, 610);
+            this.panel_btnMenu.Size = new System.Drawing.Size(132, 620);
             this.panel_btnMenu.TabIndex = 0;
+            // 
+            // btn_showBtnMenu
+            // 
+            this.btn_showBtnMenu.Location = new System.Drawing.Point(3, -1);
+            this.btn_showBtnMenu.Name = "btn_showBtnMenu";
+            this.btn_showBtnMenu.Size = new System.Drawing.Size(30, 23);
+            this.btn_showBtnMenu.TabIndex = 2;
+            this.btn_showBtnMenu.Text = "<<";
+            this.btn_showBtnMenu.UseVisualStyleBackColor = true;
+            this.btn_showBtnMenu.Click += new System.EventHandler(this.btn_showBtnMenu_Click);
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTitle.BackColor = System.Drawing.Color.White;
+            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.ForeColor = System.Drawing.Color.Blue;
+            this.txtTitle.Location = new System.Drawing.Point(138, 2);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.ReadOnly = true;
+            this.txtTitle.Size = new System.Drawing.Size(842, 31);
+            this.txtTitle.TabIndex = 3;
+            this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
+            this.txtTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseDown);
+            // 
+            // notify_Main
+            // 
+            this.notify_Main.ContextMenuStrip = this.notify_Main_menu;
+            this.notify_Main.Icon = ((System.Drawing.Icon)(resources.GetObject("notify_Main.Icon")));
+            this.notify_Main.Text = "Admin Tool";
+            this.notify_Main.Visible = true;
+            this.notify_Main.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notify_Main_MouseDoubleClick);
+            // 
+            // notify_Main_menu
+            // 
+            this.notify_Main_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.notify_Main_menu_quit});
+            this.notify_Main_menu.Name = "notify_Main_menu";
+            this.notify_Main_menu.Size = new System.Drawing.Size(106, 26);
+            this.notify_Main_menu.Text = "Thoát";
+            this.notify_Main_menu.Opening += new System.ComponentModel.CancelEventHandler(this.notify_Main_menu_Opening);
+            // 
+            // openFileDialog_IMG
+            // 
+            this.openFileDialog_IMG.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Fi" +
+                "les (*.gif)|*.gif|All files (*.*)|*.*";
+            // 
+            // btnHappy
+            // 
+            this.btnHappy.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHappy.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_App_amor_smile;
+            this.btnHappy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHappy.Location = new System.Drawing.Point(0, 470);
+            this.btnHappy.Name = "btnHappy";
+            this.btnHappy.Size = new System.Drawing.Size(132, 68);
+            this.btnHappy.TabIndex = 10;
+            this.btnHappy.Text = "Vui-Khỏe";
+            this.btnHappy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHappy.UseVisualStyleBackColor = true;
+            this.btnHappy.Click += new System.EventHandler(this.btnHappy_Click);
             // 
             // btnAppointments
             // 
@@ -2737,49 +2700,107 @@
             this.btnAppointments_ly.UseVisualStyleBackColor = true;
             this.btnAppointments_ly.Click += new System.EventHandler(this.btnAppointments_ly_Click);
             // 
-            // btn_showBtnMenu
+            // btnPersonnel_all_Edit
             // 
-            this.btn_showBtnMenu.Location = new System.Drawing.Point(3, -1);
-            this.btn_showBtnMenu.Name = "btn_showBtnMenu";
-            this.btn_showBtnMenu.Size = new System.Drawing.Size(30, 23);
-            this.btn_showBtnMenu.TabIndex = 2;
-            this.btn_showBtnMenu.Text = "<<";
-            this.btn_showBtnMenu.UseVisualStyleBackColor = true;
-            this.btn_showBtnMenu.Click += new System.EventHandler(this.btn_showBtnMenu_Click);
+            this.btnPersonnel_all_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_all_Edit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPersonnel_all_Edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_all_Edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure1;
+            this.btnPersonnel_all_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_all_Edit.Location = new System.Drawing.Point(648, 542);
+            this.btnPersonnel_all_Edit.Name = "btnPersonnel_all_Edit";
+            this.btnPersonnel_all_Edit.Size = new System.Drawing.Size(79, 41);
+            this.btnPersonnel_all_Edit.TabIndex = 20;
+            this.btnPersonnel_all_Edit.Text = "Sửa";
+            this.btnPersonnel_all_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_all_Edit.UseVisualStyleBackColor = false;
+            this.btnPersonnel_all_Edit.Click += new System.EventHandler(this.btnPersonnel_all_Edit_Click);
             // 
-            // txtTitle
+            // btnPersonnel_all_Delete
             // 
-            this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTitle.BackColor = System.Drawing.Color.White;
-            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.ForeColor = System.Drawing.Color.Blue;
-            this.txtTitle.Location = new System.Drawing.Point(138, 2);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.ReadOnly = true;
-            this.txtTitle.Size = new System.Drawing.Size(842, 31);
-            this.txtTitle.TabIndex = 3;
-            this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
-            this.txtTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseDown);
+            this.btnPersonnel_all_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_all_Delete.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPersonnel_all_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_all_Delete.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_remove;
+            this.btnPersonnel_all_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_all_Delete.Location = new System.Drawing.Point(730, 542);
+            this.btnPersonnel_all_Delete.Name = "btnPersonnel_all_Delete";
+            this.btnPersonnel_all_Delete.Size = new System.Drawing.Size(79, 41);
+            this.btnPersonnel_all_Delete.TabIndex = 19;
+            this.btnPersonnel_all_Delete.Text = "Xóa";
+            this.btnPersonnel_all_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_all_Delete.UseVisualStyleBackColor = false;
             // 
-            // notify_Main
+            // btnPersonnel_all_Add
             // 
-            this.notify_Main.ContextMenuStrip = this.notify_Main_menu;
-            this.notify_Main.Icon = ((System.Drawing.Icon)(resources.GetObject("notify_Main.Icon")));
-            this.notify_Main.Text = "Admin Tool";
-            this.notify_Main.Visible = true;
-            this.notify_Main.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notify_Main_MouseDoubleClick);
+            this.btnPersonnel_all_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_all_Add.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPersonnel_all_Add.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_all_Add.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_edit_add;
+            this.btnPersonnel_all_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_all_Add.Location = new System.Drawing.Point(557, 542);
+            this.btnPersonnel_all_Add.Name = "btnPersonnel_all_Add";
+            this.btnPersonnel_all_Add.Size = new System.Drawing.Size(87, 41);
+            this.btnPersonnel_all_Add.TabIndex = 18;
+            this.btnPersonnel_all_Add.Text = "Thêm";
+            this.btnPersonnel_all_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_all_Add.UseVisualStyleBackColor = false;
+            this.btnPersonnel_all_Add.Click += new System.EventHandler(this.btnPersonnel_all_Add_Click);
             // 
-            // notify_Main_menu
+            // btnPersonnel_detail_update
             // 
-            this.notify_Main_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.notify_Main_menu_quit});
-            this.notify_Main_menu.Name = "notify_Main_menu";
-            this.notify_Main_menu.Size = new System.Drawing.Size(106, 26);
-            this.notify_Main_menu.Text = "Thoát";
-            this.notify_Main_menu.Opening += new System.ComponentModel.CancelEventHandler(this.notify_Main_menu_Opening);
+            this.btnPersonnel_detail_update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_detail_update.Enabled = false;
+            this.btnPersonnel_detail_update.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_detail_update.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_ok;
+            this.btnPersonnel_detail_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_detail_update.Location = new System.Drawing.Point(681, 447);
+            this.btnPersonnel_detail_update.Name = "btnPersonnel_detail_update";
+            this.btnPersonnel_detail_update.Size = new System.Drawing.Size(112, 44);
+            this.btnPersonnel_detail_update.TabIndex = 35;
+            this.btnPersonnel_detail_update.Text = "Cập nhật";
+            this.btnPersonnel_detail_update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_detail_update.UseVisualStyleBackColor = true;
+            this.btnPersonnel_detail_update.Click += new System.EventHandler(this.btnPersonnel_detail_update_Click);
+            // 
+            // btnPersonnel_detail_edit
+            // 
+            this.btnPersonnel_detail_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_detail_edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_detail_edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure;
+            this.btnPersonnel_detail_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_detail_edit.Location = new System.Drawing.Point(681, 371);
+            this.btnPersonnel_detail_edit.Name = "btnPersonnel_detail_edit";
+            this.btnPersonnel_detail_edit.Size = new System.Drawing.Size(112, 44);
+            this.btnPersonnel_detail_edit.TabIndex = 34;
+            this.btnPersonnel_detail_edit.Text = "Thay đổi";
+            this.btnPersonnel_detail_edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_detail_edit.UseVisualStyleBackColor = true;
+            this.btnPersonnel_detail_edit.Click += new System.EventHandler(this.btnPersonnel_detail_edit_Click);
+            // 
+            // picPersonnel_detail_avata
+            // 
+            this.picPersonnel_detail_avata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picPersonnel_detail_avata.BackColor = System.Drawing.Color.LightGray;
+            this.picPersonnel_detail_avata.Location = new System.Drawing.Point(663, 41);
+            this.picPersonnel_detail_avata.Name = "picPersonnel_detail_avata";
+            this.picPersonnel_detail_avata.Size = new System.Drawing.Size(118, 113);
+            this.picPersonnel_detail_avata.TabIndex = 2;
+            this.picPersonnel_detail_avata.TabStop = false;
+            // 
+            // btnPersonnel_search_search
+            // 
+            this.btnPersonnel_search_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_search_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_search_search.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_App_xmag_search;
+            this.btnPersonnel_search_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_search_search.Location = new System.Drawing.Point(711, 186);
+            this.btnPersonnel_search_search.Name = "btnPersonnel_search_search";
+            this.btnPersonnel_search_search.Size = new System.Drawing.Size(75, 54);
+            this.btnPersonnel_search_search.TabIndex = 69;
+            this.btnPersonnel_search_search.Text = "Tìm";
+            this.btnPersonnel_search_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_search_search.UseVisualStyleBackColor = true;
             // 
             // notify_Main_menu_quit
             // 
@@ -2788,11 +2809,6 @@
             this.notify_Main_menu_quit.Size = new System.Drawing.Size(105, 22);
             this.notify_Main_menu_quit.Text = "Thoát";
             this.notify_Main_menu_quit.Click += new System.EventHandler(this.notify_Main_menu_quit_Click);
-            // 
-            // openFileDialog_IMG
-            // 
-            this.openFileDialog_IMG.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Fi" +
-                "les (*.gif)|*.gif|All files (*.*)|*.*";
             // 
             // FrmMain
             // 
@@ -2823,7 +2839,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel_detail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).EndInit();
             this.cbPersonnel_search_zingid.ResumeLayout(false);
             this.cbPersonnel_search_zingid.PerformLayout();
             this.grbPersonnel_search_out.ResumeLayout(false);
@@ -2833,7 +2848,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel_search)).EndInit();
             this.tabPersonnal_now.ResumeLayout(false);
             this.tabC_Personnal_now.ResumeLayout(false);
-            this.tabPersonnal_old.ResumeLayout(false);
+            this.tabHappy.ResumeLayout(false);
             this.tabC_Personnal_old.ResumeLayout(false);
             this.tabPersonnal_relation.ResumeLayout(false);
             this.tabC_Personnal_relation.ResumeLayout(false);
@@ -2862,10 +2877,11 @@
             this.tabAppointments_ly.ResumeLayout(false);
             this.tabC_Appointments_ly.ResumeLayout(false);
             this.panel_btnMenu.ResumeLayout(false);
+            this.notify_Main_menu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.notify_Main_menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2904,7 +2920,7 @@
         private System.Windows.Forms.NotifyIcon notify_Main;
         private System.Windows.Forms.ContextMenuStrip notify_Main_menu;
         private System.Windows.Forms.ToolStripMenuItem notify_Main_menu_quit;
-        private System.Windows.Forms.TabPage tabPersonnal_old;
+        private System.Windows.Forms.TabPage tabHappy;
         private System.Windows.Forms.TabPage tabPersonnal_relation;
         private System.Windows.Forms.TabPage tabMoney;
         private System.Windows.Forms.TabPage tabCards;
@@ -3075,5 +3091,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.CheckBox cbPersonnel_search_out;
         private System.Windows.Forms.CheckBox cbPersonnel_search_in;
+        private System.Windows.Forms.Button btnHappy;
     }
 }
