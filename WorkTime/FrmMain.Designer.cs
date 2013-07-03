@@ -51,6 +51,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rbtPersonel_all_searchMSNV = new System.Windows.Forms.RadioButton();
             this.rbtPersonel_all_searchName = new System.Windows.Forms.RadioButton();
+            this.btnPersonnel_all_Edit = new System.Windows.Forms.Button();
+            this.btnPersonnel_all_Delete = new System.Windows.Forms.Button();
+            this.btnPersonnel_all_Add = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbPersonnel_all_project = new System.Windows.Forms.CheckBox();
             this.cbPersonnel_all_in = new System.Windows.Forms.CheckBox();
@@ -103,6 +106,9 @@
             this.dgvPersonnel_detail = new System.Windows.Forms.DataGridView();
             this.txtPersonnel_detail__MSNV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnPersonnel_detail_update = new System.Windows.Forms.Button();
+            this.btnPersonnel_detail_edit = new System.Windows.Forms.Button();
+            this.picPersonnel_detail_avata = new System.Windows.Forms.PictureBox();
             this.cbPersonnel_search_zingid = new System.Windows.Forms.TabPage();
             this.cbPersonnel_search_out = new System.Windows.Forms.CheckBox();
             this.cbPersonnel_search_in = new System.Windows.Forms.CheckBox();
@@ -139,6 +145,7 @@
             this.txtPersonnel_search_name = new System.Windows.Forms.TextBox();
             this.txtPersonnel_search_MSNV = new System.Windows.Forms.TextBox();
             this.dgvPersonnel_search = new System.Windows.Forms.DataGridView();
+            this.btnPersonnel_search_search = new System.Windows.Forms.Button();
             this.tabPersonnal_now = new System.Windows.Forms.TabPage();
             this.tabC_Personnal_now = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -200,11 +207,6 @@
             this.tabPage31 = new System.Windows.Forms.TabPage();
             this.tabPage32 = new System.Windows.Forms.TabPage();
             this.panel_btnMenu = new System.Windows.Forms.Panel();
-            this.btn_showBtnMenu = new System.Windows.Forms.Button();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.notify_Main = new System.Windows.Forms.NotifyIcon(this.components);
-            this.notify_Main_menu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.openFileDialog_IMG = new System.Windows.Forms.OpenFileDialog();
             this.btnHappy = new System.Windows.Forms.Button();
             this.btnAppointments = new System.Windows.Forms.Button();
             this.btnCards = new System.Windows.Forms.Button();
@@ -225,14 +227,12 @@
             this.btnAppointments_date = new System.Windows.Forms.Button();
             this.btnAppointments_day = new System.Windows.Forms.Button();
             this.btnAppointments_ly = new System.Windows.Forms.Button();
-            this.btnPersonnel_all_Edit = new System.Windows.Forms.Button();
-            this.btnPersonnel_all_Delete = new System.Windows.Forms.Button();
-            this.btnPersonnel_all_Add = new System.Windows.Forms.Button();
-            this.btnPersonnel_detail_update = new System.Windows.Forms.Button();
-            this.btnPersonnel_detail_edit = new System.Windows.Forms.Button();
-            this.picPersonnel_detail_avata = new System.Windows.Forms.PictureBox();
-            this.btnPersonnel_search_search = new System.Windows.Forms.Button();
+            this.btn_showBtnMenu = new System.Windows.Forms.Button();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.notify_Main = new System.Windows.Forms.NotifyIcon(this.components);
+            this.notify_Main_menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.notify_Main_menu_quit = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog_IMG = new System.Windows.Forms.OpenFileDialog();
             this.tabC.SuspendLayout();
             this.tabPersonnal.SuspendLayout();
             this.tabC_Personnal.SuspendLayout();
@@ -243,6 +243,7 @@
             this.tabPersonnel_detail.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel_detail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).BeginInit();
             this.cbPersonnel_search_zingid.SuspendLayout();
             this.grbPersonnel_search_out.SuspendLayout();
             this.grbPersonnel_search_in.SuspendLayout();
@@ -278,11 +279,10 @@
             this.tabAppointments_ly.SuspendLayout();
             this.tabC_Appointments_ly.SuspendLayout();
             this.panel_btnMenu.SuspendLayout();
-            this.notify_Main_menu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).BeginInit();
+            this.notify_Main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabC
@@ -604,6 +604,53 @@
             this.rbtPersonel_all_searchName.TabIndex = 4;
             this.rbtPersonel_all_searchName.Text = "Tên";
             this.rbtPersonel_all_searchName.UseVisualStyleBackColor = true;
+            // 
+            // btnPersonnel_all_Edit
+            // 
+            this.btnPersonnel_all_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_all_Edit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPersonnel_all_Edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_all_Edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure1;
+            this.btnPersonnel_all_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_all_Edit.Location = new System.Drawing.Point(648, 542);
+            this.btnPersonnel_all_Edit.Name = "btnPersonnel_all_Edit";
+            this.btnPersonnel_all_Edit.Size = new System.Drawing.Size(79, 41);
+            this.btnPersonnel_all_Edit.TabIndex = 20;
+            this.btnPersonnel_all_Edit.Text = "Sửa";
+            this.btnPersonnel_all_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_all_Edit.UseVisualStyleBackColor = false;
+            this.btnPersonnel_all_Edit.Click += new System.EventHandler(this.btnPersonnel_all_Edit_Click);
+            // 
+            // btnPersonnel_all_Delete
+            // 
+            this.btnPersonnel_all_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_all_Delete.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPersonnel_all_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_all_Delete.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_remove;
+            this.btnPersonnel_all_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_all_Delete.Location = new System.Drawing.Point(730, 542);
+            this.btnPersonnel_all_Delete.Name = "btnPersonnel_all_Delete";
+            this.btnPersonnel_all_Delete.Size = new System.Drawing.Size(79, 41);
+            this.btnPersonnel_all_Delete.TabIndex = 19;
+            this.btnPersonnel_all_Delete.Text = "Xóa";
+            this.btnPersonnel_all_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_all_Delete.UseVisualStyleBackColor = false;
+            // 
+            // btnPersonnel_all_Add
+            // 
+            this.btnPersonnel_all_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_all_Add.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPersonnel_all_Add.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_all_Add.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_edit_add;
+            this.btnPersonnel_all_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_all_Add.Location = new System.Drawing.Point(557, 542);
+            this.btnPersonnel_all_Add.Name = "btnPersonnel_all_Add";
+            this.btnPersonnel_all_Add.Size = new System.Drawing.Size(87, 41);
+            this.btnPersonnel_all_Add.TabIndex = 18;
+            this.btnPersonnel_all_Add.Text = "Thêm";
+            this.btnPersonnel_all_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_all_Add.UseVisualStyleBackColor = false;
+            this.btnPersonnel_all_Add.Click += new System.EventHandler(this.btnPersonnel_all_Add_Click);
             // 
             // label2
             // 
@@ -1289,6 +1336,47 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "MSNV :";
             // 
+            // btnPersonnel_detail_update
+            // 
+            this.btnPersonnel_detail_update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_detail_update.Enabled = false;
+            this.btnPersonnel_detail_update.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_detail_update.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_ok;
+            this.btnPersonnel_detail_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_detail_update.Location = new System.Drawing.Point(681, 447);
+            this.btnPersonnel_detail_update.Name = "btnPersonnel_detail_update";
+            this.btnPersonnel_detail_update.Size = new System.Drawing.Size(112, 44);
+            this.btnPersonnel_detail_update.TabIndex = 35;
+            this.btnPersonnel_detail_update.Text = "Cập nhật";
+            this.btnPersonnel_detail_update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_detail_update.UseVisualStyleBackColor = true;
+            this.btnPersonnel_detail_update.Click += new System.EventHandler(this.btnPersonnel_detail_update_Click);
+            // 
+            // btnPersonnel_detail_edit
+            // 
+            this.btnPersonnel_detail_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_detail_edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_detail_edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure;
+            this.btnPersonnel_detail_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_detail_edit.Location = new System.Drawing.Point(681, 371);
+            this.btnPersonnel_detail_edit.Name = "btnPersonnel_detail_edit";
+            this.btnPersonnel_detail_edit.Size = new System.Drawing.Size(112, 44);
+            this.btnPersonnel_detail_edit.TabIndex = 34;
+            this.btnPersonnel_detail_edit.Text = "Thay đổi";
+            this.btnPersonnel_detail_edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_detail_edit.UseVisualStyleBackColor = true;
+            this.btnPersonnel_detail_edit.Click += new System.EventHandler(this.btnPersonnel_detail_edit_Click);
+            // 
+            // picPersonnel_detail_avata
+            // 
+            this.picPersonnel_detail_avata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picPersonnel_detail_avata.BackColor = System.Drawing.Color.LightGray;
+            this.picPersonnel_detail_avata.Location = new System.Drawing.Point(663, 41);
+            this.picPersonnel_detail_avata.Name = "picPersonnel_detail_avata";
+            this.picPersonnel_detail_avata.Size = new System.Drawing.Size(118, 113);
+            this.picPersonnel_detail_avata.TabIndex = 2;
+            this.picPersonnel_detail_avata.TabStop = false;
+            // 
             // cbPersonnel_search_zingid
             // 
             this.cbPersonnel_search_zingid.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1742,6 +1830,20 @@
             this.dgvPersonnel_search.TabIndex = 31;
             this.dgvPersonnel_search.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonnel_search_CellContentClick);
             // 
+            // btnPersonnel_search_search
+            // 
+            this.btnPersonnel_search_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPersonnel_search_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonnel_search_search.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_App_xmag_search;
+            this.btnPersonnel_search_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonnel_search_search.Location = new System.Drawing.Point(711, 186);
+            this.btnPersonnel_search_search.Name = "btnPersonnel_search_search";
+            this.btnPersonnel_search_search.Size = new System.Drawing.Size(75, 54);
+            this.btnPersonnel_search_search.TabIndex = 69;
+            this.btnPersonnel_search_search.Text = "Tìm";
+            this.btnPersonnel_search_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonnel_search_search.UseVisualStyleBackColor = true;
+            // 
             // tabPersonnal_now
             // 
             this.tabPersonnal_now.Controls.Add(this.tabC_Personnal_now);
@@ -1763,7 +1865,7 @@
             this.tabC_Personnal_now.Location = new System.Drawing.Point(5, 6);
             this.tabC_Personnal_now.Name = "tabC_Personnal_now";
             this.tabC_Personnal_now.SelectedIndex = 0;
-            this.tabC_Personnal_now.Size = new System.Drawing.Size(1037, 588);
+            this.tabC_Personnal_now.Size = new System.Drawing.Size(817, 614);
             this.tabC_Personnal_now.TabIndex = 1;
             // 
             // tabPage1
@@ -1771,7 +1873,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1029, 560);
+            this.tabPage1.Size = new System.Drawing.Size(809, 586);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1824,7 +1926,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1029, 560);
+            this.tabPage6.Size = new System.Drawing.Size(809, 586);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1867,7 +1969,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(829, 586);
+            this.tabPage8.Size = new System.Drawing.Size(809, 586);
             this.tabPage8.TabIndex = 1;
             this.tabPage8.Text = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -2168,7 +2270,7 @@
             this.tabPage22.Location = new System.Drawing.Point(4, 24);
             this.tabPage22.Name = "tabPage22";
             this.tabPage22.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage22.Size = new System.Drawing.Size(829, 560);
+            this.tabPage22.Size = new System.Drawing.Size(809, 586);
             this.tabPage22.TabIndex = 1;
             this.tabPage22.Text = "tabPage22";
             this.tabPage22.UseVisualStyleBackColor = true;
@@ -2211,7 +2313,7 @@
             this.tabPage24.Location = new System.Drawing.Point(4, 24);
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage24.Size = new System.Drawing.Size(809, 560);
+            this.tabPage24.Size = new System.Drawing.Size(809, 586);
             this.tabPage24.TabIndex = 1;
             this.tabPage24.Text = "tabPage24";
             this.tabPage24.UseVisualStyleBackColor = true;
@@ -2254,7 +2356,7 @@
             this.tabPage26.Location = new System.Drawing.Point(4, 24);
             this.tabPage26.Name = "tabPage26";
             this.tabPage26.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage26.Size = new System.Drawing.Size(809, 560);
+            this.tabPage26.Size = new System.Drawing.Size(809, 586);
             this.tabPage26.TabIndex = 1;
             this.tabPage26.Text = "tabPage26";
             this.tabPage26.UseVisualStyleBackColor = true;
@@ -2297,7 +2399,7 @@
             this.tabPage28.Location = new System.Drawing.Point(4, 24);
             this.tabPage28.Name = "tabPage28";
             this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage28.Size = new System.Drawing.Size(809, 560);
+            this.tabPage28.Size = new System.Drawing.Size(809, 586);
             this.tabPage28.TabIndex = 1;
             this.tabPage28.Text = "tabPage28";
             this.tabPage28.UseVisualStyleBackColor = true;
@@ -2340,7 +2442,7 @@
             this.tabPage30.Location = new System.Drawing.Point(4, 24);
             this.tabPage30.Name = "tabPage30";
             this.tabPage30.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage30.Size = new System.Drawing.Size(809, 560);
+            this.tabPage30.Size = new System.Drawing.Size(809, 586);
             this.tabPage30.TabIndex = 1;
             this.tabPage30.Text = "tabPage30";
             this.tabPage30.UseVisualStyleBackColor = true;
@@ -2383,7 +2485,7 @@
             this.tabPage32.Location = new System.Drawing.Point(4, 24);
             this.tabPage32.Name = "tabPage32";
             this.tabPage32.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage32.Size = new System.Drawing.Size(809, 560);
+            this.tabPage32.Size = new System.Drawing.Size(809, 586);
             this.tabPage32.TabIndex = 1;
             this.tabPage32.Text = "tabPage32";
             this.tabPage32.UseVisualStyleBackColor = true;
@@ -2405,55 +2507,6 @@
             this.panel_btnMenu.Name = "panel_btnMenu";
             this.panel_btnMenu.Size = new System.Drawing.Size(132, 620);
             this.panel_btnMenu.TabIndex = 0;
-            // 
-            // btn_showBtnMenu
-            // 
-            this.btn_showBtnMenu.Location = new System.Drawing.Point(3, -1);
-            this.btn_showBtnMenu.Name = "btn_showBtnMenu";
-            this.btn_showBtnMenu.Size = new System.Drawing.Size(30, 23);
-            this.btn_showBtnMenu.TabIndex = 2;
-            this.btn_showBtnMenu.Text = "<<";
-            this.btn_showBtnMenu.UseVisualStyleBackColor = true;
-            this.btn_showBtnMenu.Click += new System.EventHandler(this.btn_showBtnMenu_Click);
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTitle.BackColor = System.Drawing.Color.White;
-            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.ForeColor = System.Drawing.Color.Blue;
-            this.txtTitle.Location = new System.Drawing.Point(138, 2);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.ReadOnly = true;
-            this.txtTitle.Size = new System.Drawing.Size(842, 31);
-            this.txtTitle.TabIndex = 3;
-            this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
-            this.txtTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseDown);
-            // 
-            // notify_Main
-            // 
-            this.notify_Main.ContextMenuStrip = this.notify_Main_menu;
-            this.notify_Main.Icon = ((System.Drawing.Icon)(resources.GetObject("notify_Main.Icon")));
-            this.notify_Main.Text = "Admin Tool";
-            this.notify_Main.Visible = true;
-            this.notify_Main.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notify_Main_MouseDoubleClick);
-            // 
-            // notify_Main_menu
-            // 
-            this.notify_Main_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.notify_Main_menu_quit});
-            this.notify_Main_menu.Name = "notify_Main_menu";
-            this.notify_Main_menu.Size = new System.Drawing.Size(106, 26);
-            this.notify_Main_menu.Text = "Thoát";
-            this.notify_Main_menu.Opening += new System.ComponentModel.CancelEventHandler(this.notify_Main_menu_Opening);
-            // 
-            // openFileDialog_IMG
-            // 
-            this.openFileDialog_IMG.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Fi" +
-                "les (*.gif)|*.gif|All files (*.*)|*.*";
             // 
             // btnHappy
             // 
@@ -2700,107 +2753,49 @@
             this.btnAppointments_ly.UseVisualStyleBackColor = true;
             this.btnAppointments_ly.Click += new System.EventHandler(this.btnAppointments_ly_Click);
             // 
-            // btnPersonnel_all_Edit
+            // btn_showBtnMenu
             // 
-            this.btnPersonnel_all_Edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_all_Edit.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPersonnel_all_Edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_all_Edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure1;
-            this.btnPersonnel_all_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_all_Edit.Location = new System.Drawing.Point(648, 542);
-            this.btnPersonnel_all_Edit.Name = "btnPersonnel_all_Edit";
-            this.btnPersonnel_all_Edit.Size = new System.Drawing.Size(79, 41);
-            this.btnPersonnel_all_Edit.TabIndex = 20;
-            this.btnPersonnel_all_Edit.Text = "Sửa";
-            this.btnPersonnel_all_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_all_Edit.UseVisualStyleBackColor = false;
-            this.btnPersonnel_all_Edit.Click += new System.EventHandler(this.btnPersonnel_all_Edit_Click);
+            this.btn_showBtnMenu.Location = new System.Drawing.Point(3, -1);
+            this.btn_showBtnMenu.Name = "btn_showBtnMenu";
+            this.btn_showBtnMenu.Size = new System.Drawing.Size(30, 23);
+            this.btn_showBtnMenu.TabIndex = 2;
+            this.btn_showBtnMenu.Text = "<<";
+            this.btn_showBtnMenu.UseVisualStyleBackColor = true;
+            this.btn_showBtnMenu.Click += new System.EventHandler(this.btn_showBtnMenu_Click);
             // 
-            // btnPersonnel_all_Delete
+            // txtTitle
             // 
-            this.btnPersonnel_all_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_all_Delete.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPersonnel_all_Delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_all_Delete.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_remove;
-            this.btnPersonnel_all_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_all_Delete.Location = new System.Drawing.Point(730, 542);
-            this.btnPersonnel_all_Delete.Name = "btnPersonnel_all_Delete";
-            this.btnPersonnel_all_Delete.Size = new System.Drawing.Size(79, 41);
-            this.btnPersonnel_all_Delete.TabIndex = 19;
-            this.btnPersonnel_all_Delete.Text = "Xóa";
-            this.btnPersonnel_all_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_all_Delete.UseVisualStyleBackColor = false;
+            this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTitle.BackColor = System.Drawing.Color.White;
+            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.ForeColor = System.Drawing.Color.Blue;
+            this.txtTitle.Location = new System.Drawing.Point(138, 2);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.ReadOnly = true;
+            this.txtTitle.Size = new System.Drawing.Size(842, 31);
+            this.txtTitle.TabIndex = 3;
+            this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
+            this.txtTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseDown);
             // 
-            // btnPersonnel_all_Add
+            // notify_Main
             // 
-            this.btnPersonnel_all_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_all_Add.BackColor = System.Drawing.SystemColors.Control;
-            this.btnPersonnel_all_Add.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_all_Add.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_edit_add;
-            this.btnPersonnel_all_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_all_Add.Location = new System.Drawing.Point(557, 542);
-            this.btnPersonnel_all_Add.Name = "btnPersonnel_all_Add";
-            this.btnPersonnel_all_Add.Size = new System.Drawing.Size(87, 41);
-            this.btnPersonnel_all_Add.TabIndex = 18;
-            this.btnPersonnel_all_Add.Text = "Thêm";
-            this.btnPersonnel_all_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_all_Add.UseVisualStyleBackColor = false;
-            this.btnPersonnel_all_Add.Click += new System.EventHandler(this.btnPersonnel_all_Add_Click);
+            this.notify_Main.ContextMenuStrip = this.notify_Main_menu;
+            this.notify_Main.Icon = ((System.Drawing.Icon)(resources.GetObject("notify_Main.Icon")));
+            this.notify_Main.Text = "Admin Tool";
+            this.notify_Main.Visible = true;
+            this.notify_Main.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notify_Main_MouseDoubleClick);
             // 
-            // btnPersonnel_detail_update
+            // notify_Main_menu
             // 
-            this.btnPersonnel_detail_update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_detail_update.Enabled = false;
-            this.btnPersonnel_detail_update.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_detail_update.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_ok;
-            this.btnPersonnel_detail_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_detail_update.Location = new System.Drawing.Point(681, 447);
-            this.btnPersonnel_detail_update.Name = "btnPersonnel_detail_update";
-            this.btnPersonnel_detail_update.Size = new System.Drawing.Size(112, 44);
-            this.btnPersonnel_detail_update.TabIndex = 35;
-            this.btnPersonnel_detail_update.Text = "Cập nhật";
-            this.btnPersonnel_detail_update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_detail_update.UseVisualStyleBackColor = true;
-            this.btnPersonnel_detail_update.Click += new System.EventHandler(this.btnPersonnel_detail_update_Click);
-            // 
-            // btnPersonnel_detail_edit
-            // 
-            this.btnPersonnel_detail_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_detail_edit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_detail_edit.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_configure;
-            this.btnPersonnel_detail_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_detail_edit.Location = new System.Drawing.Point(681, 371);
-            this.btnPersonnel_detail_edit.Name = "btnPersonnel_detail_edit";
-            this.btnPersonnel_detail_edit.Size = new System.Drawing.Size(112, 44);
-            this.btnPersonnel_detail_edit.TabIndex = 34;
-            this.btnPersonnel_detail_edit.Text = "Thay đổi";
-            this.btnPersonnel_detail_edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_detail_edit.UseVisualStyleBackColor = true;
-            this.btnPersonnel_detail_edit.Click += new System.EventHandler(this.btnPersonnel_detail_edit_Click);
-            // 
-            // picPersonnel_detail_avata
-            // 
-            this.picPersonnel_detail_avata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picPersonnel_detail_avata.BackColor = System.Drawing.Color.LightGray;
-            this.picPersonnel_detail_avata.Location = new System.Drawing.Point(663, 41);
-            this.picPersonnel_detail_avata.Name = "picPersonnel_detail_avata";
-            this.picPersonnel_detail_avata.Size = new System.Drawing.Size(118, 113);
-            this.picPersonnel_detail_avata.TabIndex = 2;
-            this.picPersonnel_detail_avata.TabStop = false;
-            // 
-            // btnPersonnel_search_search
-            // 
-            this.btnPersonnel_search_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPersonnel_search_search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonnel_search_search.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_App_xmag_search;
-            this.btnPersonnel_search_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonnel_search_search.Location = new System.Drawing.Point(711, 186);
-            this.btnPersonnel_search_search.Name = "btnPersonnel_search_search";
-            this.btnPersonnel_search_search.Size = new System.Drawing.Size(75, 54);
-            this.btnPersonnel_search_search.TabIndex = 69;
-            this.btnPersonnel_search_search.Text = "Tìm";
-            this.btnPersonnel_search_search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonnel_search_search.UseVisualStyleBackColor = true;
+            this.notify_Main_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.notify_Main_menu_quit});
+            this.notify_Main_menu.Name = "notify_Main_menu";
+            this.notify_Main_menu.Size = new System.Drawing.Size(106, 26);
+            this.notify_Main_menu.Text = "Thoát";
+            this.notify_Main_menu.Opening += new System.ComponentModel.CancelEventHandler(this.notify_Main_menu_Opening);
             // 
             // notify_Main_menu_quit
             // 
@@ -2809,6 +2804,11 @@
             this.notify_Main_menu_quit.Size = new System.Drawing.Size(105, 22);
             this.notify_Main_menu_quit.Text = "Thoát";
             this.notify_Main_menu_quit.Click += new System.EventHandler(this.notify_Main_menu_quit_Click);
+            // 
+            // openFileDialog_IMG
+            // 
+            this.openFileDialog_IMG.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Fi" +
+                "les (*.gif)|*.gif|All files (*.*)|*.*";
             // 
             // FrmMain
             // 
@@ -2839,6 +2839,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel_detail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).EndInit();
             this.cbPersonnel_search_zingid.ResumeLayout(false);
             this.cbPersonnel_search_zingid.PerformLayout();
             this.grbPersonnel_search_out.ResumeLayout(false);
@@ -2877,11 +2878,10 @@
             this.tabAppointments_ly.ResumeLayout(false);
             this.tabC_Appointments_ly.ResumeLayout(false);
             this.panel_btnMenu.ResumeLayout(false);
-            this.notify_Main_menu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picPersonnel_detail_avata)).EndInit();
+            this.notify_Main_menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
