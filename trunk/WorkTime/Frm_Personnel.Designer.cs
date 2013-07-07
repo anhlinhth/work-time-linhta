@@ -61,11 +61,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtMSNV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.picAvata = new System.Windows.Forms.PictureBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.cbxAddALot = new System.Windows.Forms.CheckBox();
             this.openFileDialog_IMG = new System.Windows.Forms.OpenFileDialog();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.picAvata = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picAvata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -423,6 +423,35 @@
             this.label3.TabIndex = 44;
             this.label3.Text = "MSNV :";
             // 
+            // cbxAddALot
+            // 
+            this.cbxAddALot.AutoSize = true;
+            this.cbxAddALot.Location = new System.Drawing.Point(411, 480);
+            this.cbxAddALot.Name = "cbxAddALot";
+            this.cbxAddALot.Size = new System.Drawing.Size(111, 17);
+            this.cbxAddALot.TabIndex = 80;
+            this.cbxAddALot.Text = "Thêm nhiều người";
+            this.cbxAddALot.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog_IMG
+            // 
+            this.openFileDialog_IMG.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Fi" +
+                "les (*.gif)|*.gif|All files (*.*)|*.*";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Enabled = false;
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdd.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_edit_add;
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(292, 467);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(95, 44);
+            this.btnAdd.TabIndex = 79;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
             // btnUpdate
             // 
             this.btnUpdate.Enabled = false;
@@ -445,35 +474,6 @@
             this.picAvata.Size = new System.Drawing.Size(118, 113);
             this.picAvata.TabIndex = 46;
             this.picAvata.TabStop = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Enabled = false;
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdd.Image = global::WorkTime.Properties.Resources.Everaldo_Crystal_Clear_Action_edit_add;
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(292, 467);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(95, 44);
-            this.btnAdd.TabIndex = 79;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // cbxAddALot
-            // 
-            this.cbxAddALot.AutoSize = true;
-            this.cbxAddALot.Location = new System.Drawing.Point(411, 480);
-            this.cbxAddALot.Name = "cbxAddALot";
-            this.cbxAddALot.Size = new System.Drawing.Size(111, 17);
-            this.cbxAddALot.TabIndex = 80;
-            this.cbxAddALot.Text = "Thêm nhiều người";
-            this.cbxAddALot.UseVisualStyleBackColor = true;
-            // 
-            // openFileDialog_IMG
-            // 
-            this.openFileDialog_IMG.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Fi" +
-                "les (*.gif)|*.gif|All files (*.*)|*.*";
             // 
             // Frm_Personnel
             // 

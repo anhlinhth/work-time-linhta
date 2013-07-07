@@ -73,11 +73,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_AddListMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AddListMoney.Designer.cs">
+      <DependentUpon>Frm_AddListMoney.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Add-Sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Add-Sub.Designer.cs">
+      <DependentUpon>Frm_Add-Sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_PerRelationcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PerRelationcs.Designer.cs">
+      <DependentUpon>Frm_PerRelationcs.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Personnel.cs">
       <SubType>Form</SubType>
@@ -105,6 +123,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Add-Sub.resx">
+      <DependentUpon>Frm_Add-Sub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AddListMoney.resx">
+      <DependentUpon>Frm_AddListMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PerRelationcs.resx">
+      <DependentUpon>Frm_PerRelationcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Personnel.resx">
       <DependentUpon>Frm_Personnel.cs</DependentUpon>
